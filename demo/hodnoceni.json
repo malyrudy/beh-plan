@@ -1,0 +1,56 @@
+{
+ "k_datu": "2027-02-03",
+ "stav": "pozor",
+ "titulek": "Dobře, jen zpomal sobotní běhy",
+ "shrnuti": "Objem i dlouhé běhy sedí s plánem. V sobotu byl ale lehký běh skoro v tempu na půlmaraton a v neděli k tomu přišly dvě hodiny na kole – únava se sčítá.",
+ "body": [
+  {
+   "stav": "ok",
+   "nazev": "Objem sedí",
+   "text": "Týden 4 (odlehčení): odběhnuto v rámci plánu, dlouhý běh splněný."
+  },
+  {
+   "stav": "pozor",
+   "nazev": "Sobotní běh moc rychle",
+   "text": "5:38/km při tepu 158 – to je o 10 tepů nad stropem lehkého běhu (148)."
+  },
+  {
+   "stav": "ok",
+   "nazev": "Tepy na dlouhém běhu",
+   "text": "Neděle v pásmu, průměr pod 148."
+  },
+  {
+   "stav": "pozor",
+   "nazev": "Hodně jiných sportů",
+   "text": "Za 7 dní 1,8 h na kole navíc. Počítá se do únavy – při ubírání uber nejdřív kolo."
+  }
+ ],
+ "doporuceni": "Čtvrteční tempo 2 × 8 min běž podle tepu (do 175), ne na sílu. Sobotní běh klidně o 30 s/km pomaleji.",
+ "aktivity": {
+  "20270126-1805-beh": {
+   "stav": "ok",
+   "stitek": "dle plánu",
+   "komentar": "Tempo i tep v pásmu lehkého běhu."
+  },
+  "20270128-1820-beh": {
+   "stav": "ok",
+   "stitek": "dle plánu",
+   "komentar": "Tempo i tep v pásmu lehkého běhu."
+  },
+  "20270130-0905-beh": {
+   "stav": "pozor",
+   "stitek": "moc rychle",
+   "komentar": "Lehký běh má být do 148 tepů. Tady průměr 158 – to už je spíš tempo na půlmaraton. Příště zpomal, i kdyby to mělo být 6:40/km."
+  },
+  "20270131-0920-beh": {
+   "stav": "ok",
+   "stitek": "dle plánu",
+   "komentar": "Tempo i tep v pásmu lehkého běhu."
+  },
+  "20270202-1805-beh": {
+   "stav": "ok",
+   "stitek": "dle plánu",
+   "komentar": "Tempo i tep v pásmu lehkého běhu."
+  }
+ }
+}

@@ -1,0 +1,873 @@
+{
+ "vygenerovano": "2027-01-02",
+ "tempa": [
+  {
+   "klic": "lehky",
+   "nazev": "Lehký / dlouhý běh",
+   "od": "7:02",
+   "do": "6:24",
+   "tep": "125–150",
+   "popis": "Dá se mluvit v celých větách. Většina objemu."
+  },
+  {
+   "klic": "prah",
+   "nazev": "Tempo běh (práh)",
+   "od": "5:26",
+   "do": "5:17",
+   "tep": "165–175",
+   "popis": "„Komfortně těžké“, 20–40 min souvisle nebo v úsecích."
+  },
+  {
+   "klic": "intervaly",
+   "nazev": "Intervaly (VO2max)",
+   "od": "4:58",
+   "do": "4:51",
+   "tep": "177–186",
+   "popis": "Těžké, ale technicky čisté. Úseky 2–5 min."
+  },
+  {
+   "klic": "hm",
+   "nazev": "Tempo na půlmaraton",
+   "od": "5:36",
+   "do": "5:26",
+   "tep": "163–173",
+   "popis": "Kontrolované, závodní úsilí."
+  }
+ ],
+ "faze": [
+  {
+   "nazev": "Základní",
+   "od": 1,
+   "do": 4,
+   "popis": "Lehké běhy, rovinky a fartlek."
+  },
+  {
+   "nazev": "Rozvojová",
+   "od": 5,
+   "do": 8,
+   "popis": "Tempo běhy a intervaly."
+  },
+  {
+   "nazev": "Specifická",
+   "od": 9,
+   "do": 12,
+   "popis": "Úseky v závodním tempu."
+  },
+  {
+   "nazev": "Tapering",
+   "od": 13,
+   "do": 14,
+   "popis": "Objem klesá, nohy se osvěží."
+  }
+ ],
+ "tydny": [
+  {
+   "cislo": 1,
+   "od": "2027-01-04",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "Lehké běhy podle tepu, poznej tempo",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 4,
+     "nazev": "4 × 20 s rovinky · 4 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 8,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 2,
+   "od": "2027-01-11",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "Rovinky po čtvrtečním běhu",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 5,
+     "nazev": "6 × 20 s rovinky · 5 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 8,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 3,
+   "od": "2027-01-18",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "První fartlek",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 5,
+     "nazev": "Fartlek 6 × 1 min · 5 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 9,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 4,
+   "od": "2027-01-25",
+   "faze": "Základní",
+   "odlehceni": true,
+   "poznamka": "Odlehčení",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 4,
+     "nazev": "4 × 20 s rovinky · 4 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 7,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 5,
+   "od": "2027-02-01",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "První tempo běh",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Tempo 2 × 8 min · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 9,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 6,
+   "od": "2027-02-08",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Intervaly 5 × 800 m · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 10,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 7,
+   "od": "2027-02-15",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Tempo 3 × 8 min · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 11,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 8,
+   "od": "2027-02-22",
+   "faze": "Rozvojová",
+   "odlehceni": true,
+   "poznamka": "Odlehčení + test 5 km → zpřesníme tempa",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 5,
+     "nazev": "Test 5 km naplno · 5 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 9,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ],
+   "udalost": "Test 5 km"
+  },
+  {
+   "cislo": 9,
+   "od": "2027-03-01",
+   "faze": "Specifická",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Tempo 20 min souvisle · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 12,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 10,
+   "od": "2027-03-08",
+   "faze": "Specifická",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 7,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 7,
+     "nazev": "Intervaly 6 × 1 km · 7 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 12,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 11,
+   "od": "2027-03-15",
+   "faze": "Specifická",
+   "odlehceni": false,
+   "poznamka": "Nejdelší týden",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 8,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 8,
+     "nazev": "3 × 3 km v tempu na půlmaraton · 8 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 13,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ],
+   "udalost": "Vrchol"
+  },
+  {
+   "cislo": 12,
+   "od": "2027-03-22",
+   "faze": "Specifická",
+   "odlehceni": true,
+   "poznamka": "Odlehčení",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Tempo 2 × 10 min · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 10,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 13,
+   "od": "2027-03-29",
+   "faze": "Tapering",
+   "odlehceni": false,
+   "poznamka": "Tapering – objem klesá, intenzita zůstává",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Posilovna · nohy + core",
+     "popis": "40 min, lehčí váhy, technika.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 5,
+     "nazev": "5 km v tempu na půlmaraton · 5 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 9,
+     "popis": "Pomalu, poslední 2 km můžou být svižnější."
+    }
+   ]
+  },
+  {
+   "cislo": 14,
+   "od": "2027-04-05",
+   "faze": "Tapering",
+   "odlehceni": false,
+   "poznamka": "Závodní týden: krátké běhy, v neděli závod",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 148."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno nebo 30–40 min kolo / plavání lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 4,
+     "nazev": "4 × 20 s rovinky · 4 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "So",
+     "typ": "lehky",
+     "km": 3,
+     "popis": "Krátce a lehce."
+    },
+    {
+     "den": "Ne",
+     "typ": "zavod",
+     "km": 21.1,
+     "nazev": "Jarní půlmaraton 🏁",
+     "popis": "Prvních 5 km o 5 s/km pomaleji, pak cílové tempo."
+    }
+   ],
+   "udalost": "Závod"
+  }
+ ],
+ "den_d": {
+  "tempo": "5:27",
+  "strategie": "Prvních 5 km o 5 s/km pomaleji než cíl, pak kontrolovaně v tempu. Od 16. km podle sil.",
+  "zavodni_tyden": [
+   "Čtvrtek: krátký běh s rovinkami.",
+   "2 dny před závodem víc sacharidů, nic nového.",
+   "Snídaně 2–3 h před startem."
+  ],
+  "vyziva": [
+   "1 gel kolem 8. a 15. km (~45 g/h, stejné jako v tréninku).",
+   "Pít na občerstvovačkách podle žízně.",
+   "Boty, ve kterých máš aspoň 3 dlouhé běhy."
+  ]
+ }
+}

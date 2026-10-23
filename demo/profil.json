@@ -1,0 +1,28 @@
+{
+ "jmeno": "Ukázka",
+ "zavod": {
+  "nazev": "Jarní půlmaraton",
+  "datum": "2027-04-11",
+  "vzdalenost_km": 21.0975,
+  "cil": "1:55:00"
+ },
+ "start_pripravy": "2027-01-04",
+ "referencni_vykon": {
+  "vzdalenost_km": 10,
+  "cas": "52:30",
+  "datum": "2026-10-10"
+ },
+ "max_tep": 192,
+ "lehky_tep_max": 148,
+ "bezecke_dny": [
+  "Út",
+  "Čt",
+  "So",
+  "Ne"
+ ],
+ "poznamky": [
+  "Posilovna v pondělí",
+  "Občas kolo o víkendu"
+ ],
+ "demo_dnes": "2027-02-04"
+}

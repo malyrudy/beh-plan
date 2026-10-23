@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Běžecká příprava</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Barvy jako tokeny – světlý a tmavý režim podle systému, případně vynucený data-theme. */
+:root {
+  --bg: #f5f4f0; --card: #ffffff; --text: #1d1f1c; --muted: #6b6f68; --line: #e3e1da; --soft: #efede7;
+  --accent: #e2572b; --accent-soft: #fbe6dd;
+  --ok: #2f8a4f; --ok-soft: #e1f2e6; --warn: #b7791f; --warn-soft: #fbf0d9; --bad: #c2412d; --bad-soft: #f9e0db;
+  --f1: #4c9a6a; --f2: #3a7bbf; --f3: #e07a35; --f4: #8a68c2; --f5: #9a8f80;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141513; --card: #1d1f1c; --text: #ecebe6; --muted: #9b9e96; --line: #2f322d; --soft: #262924;
+    --accent: #f07448; --accent-soft: #3a2219;
+    --ok: #5cbf7c; --ok-soft: #1c3324; --warn: #e0a84a; --warn-soft: #3a2f17; --bad: #ec6e5a; --bad-soft: #3d1f1a;
+    --f1: #5fb37f; --f2: #5b9be0; --f3: #f0924f; --f4: #a688dd; --f5: #a59a8b;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141513; --card: #1d1f1c; --text: #ecebe6; --muted: #9b9e96; --line: #2f322d; --soft: #262924;
+  --accent: #f07448; --accent-soft: #3a2219;
+  --ok: #5cbf7c; --ok-soft: #1c3324; --warn: #e0a84a; --warn-soft: #3a2f17; --bad: #ec6e5a; --bad-soft: #3d1f1a;
+  --f1: #5fb37f; --f2: #5b9be0; --f3: #f0924f; --f4: #a688dd; --f5: #a59a8b;
+  --shadow: none;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.55 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+
+/* Hlavička */
+header { padding: 44px 0 28px; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+h1 { font-size: clamp(34px, 7vw, 56px); line-height: 1.02; margin: 8px 0 10px; font-weight: 800; letter-spacing: -.02em; }
+.sub { color: var(--muted); font-size: 16px; }
+.progress { margin-top: 18px; height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.progress > div { height: 100%; background: var(--accent); border-radius: 3px; }
+.progress-label { margin-top: 8px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* Navigace */
+nav { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+nav .wrap { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; padding-top: 8px; padding-bottom: 8px; }
+nav a { flex: none; padding: 6px 11px; border-radius: 999px; font-size: 13px; font-weight: 500; color: var(--muted); text-decoration: none; }
+nav a:hover { background: var(--soft); color: var(--text); }
+
+/* Sekce a karty */
+section { padding: 28px 0 8px; }
+h2 { font-size: 22px; margin: 0 0 6px; letter-spacing: -.01em; }
+.lead { color: var(--muted); margin: 0 0 16px; max-width: 680px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: var(--shadow); }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+.kicker { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* Týden */
+.week-head { display: flex; align-items: center; gap: 8px; }
+.week-head .kicker { flex: 1; text-align: center; }
+.week-head .kicker.now { color: var(--accent); }
+.arrow { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--text); font-size: 18px; cursor: pointer; }
+.arrow:disabled { opacity: .3; cursor: default; }
+.week-note { text-align: center; margin: 10px 0 16px; font-weight: 500; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+.stat { background: var(--soft); border-radius: 12px; padding: 10px 12px; }
+.stat b { display: block; font-size: 24px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12px; color: var(--muted); }
+.days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.day { border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 8px 2px 7px; text-align: center; cursor: pointer; color: var(--text); font: inherit; position: relative; min-width: 0; }
+.day .dn { font-size: 12px; font-weight: 600; color: var(--muted); }
+.day .ic { font-size: 20px; line-height: 1.5; }
+.day .km { font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; min-height: 18px; }
+.day.today { border-color: var(--accent); }
+.day.sel { background: var(--accent-soft); border-color: var(--accent); }
+.day .done { position: absolute; top: 4px; right: 5px; width: 8px; height: 8px; border-radius: 50%; background: var(--ok); }
+.day .done.pozor { background: var(--warn); } .day .done.spatne { background: var(--bad); }
+.detail { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 14px; }
+.detail h3 { margin: 4px 0 6px; font-size: 18px; }
+.detail ul { margin: 8px 0 0; padding-left: 18px; }
+.detail li { margin: 2px 0; }
+.real { margin-top: 12px; background: var(--soft); border-radius: 12px; padding: 10px 12px; font-size: 14px; }
+.real + .real { margin-top: 8px; }
+.hint { margin-top: 14px; font-size: 13px; color: var(--muted); }
+
+/* Hodnocení */
+.verdict { border-radius: 14px; padding: 16px 18px; margin-bottom: 14px; }
+.verdict b { font-size: 18px; display: block; margin-bottom: 4px; }
+.verdict p { margin: 0; }
+.v-dobre { background: var(--ok-soft); } .v-dobre b { color: var(--ok); }
+.v-pozor { background: var(--warn-soft); } .v-pozor b { color: var(--warn); }
+.v-ubrat { background: var(--bad-soft); } .v-ubrat b { color: var(--bad); }
+.points { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.points li { padding-left: 26px; position: relative; }
+.points li::before { content: "✓"; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%; font-size: 11px; display: grid; place-items: center; font-weight: 700; background: var(--ok-soft); color: var(--ok); }
+.points li.p-pozor::before { content: "!"; background: var(--warn-soft); color: var(--warn); }
+.points li.p-spatne::before { content: "×"; background: var(--bad-soft); color: var(--bad); }
+.next { margin-top: 14px; padding: 12px 14px; border-left: 3px solid var(--accent); background: var(--soft); border-radius: 0 10px 10px 0; }
+
+/* Aktivity */
+.acts { display: grid; gap: 8px; }
+.act { display: grid; grid-template-columns: 34px 1fr auto; gap: 4px 10px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.act .ic { font-size: 20px; text-align: center; }
+.act .t { font-weight: 600; }
+.act .m { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.act details { grid-column: 2 / 4; font-size: 14px; }
+.act summary { cursor: pointer; color: var(--muted); font-size: 13px; }
+.pill { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 999px; white-space: nowrap; background: var(--ok-soft); color: var(--ok); }
+.pill.pozor { background: var(--warn-soft); color: var(--warn); } .pill.spatne { background: var(--bad-soft); color: var(--bad); }
+.pill.none { background: var(--soft); color: var(--muted); }
+.sports { margin-top: 12px; font-size: 13px; color: var(--muted); }
+
+/* Grafy */
+svg text { fill: var(--muted); font-family: inherit; }
+.chart { width: 100%; height: auto; display: block; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 12px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+.bar-hit { cursor: pointer; fill: transparent; }
+.bar-hit:hover { fill: var(--soft); opacity: .6; }
+
+/* Plán po týdnech */
+.weeks { display: grid; gap: 4px; }
+.wk { display: grid; grid-template-columns: 30px 64px 52px 52px 1fr; gap: 10px; align-items: baseline; padding: 8px 10px; border-radius: 10px; cursor: pointer; font-size: 14px; }
+.wk:hover { background: var(--soft); }
+.wk.now { background: var(--accent-soft); }
+.wk .n { font-weight: 700; color: var(--muted); }
+.wk .k { font-weight: 600; font-variant-numeric: tabular-nums; }
+.wk .k small { font-weight: 400; color: var(--muted); }
+.wk.past { opacity: .62; }
+.wk .bar { height: 4px; border-radius: 2px; margin-top: 4px; }
+.wk-head { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; cursor: default; }
+.wk-head:hover { background: none; }
+
+/* Tempa */
+.zones { display: grid; gap: 14px; }
+.zone-track { position: relative; height: 12px; background: var(--soft); border-radius: 6px; margin: 6px 0 4px; }
+.zone-track span { position: absolute; top: 0; height: 100%; border-radius: 6px; }
+.zone-row { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.zone-row b { font-variant-numeric: tabular-nums; }
+
+/* Den D */
+.race { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.race .stat b { font-size: 30px; }
+.splits { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; margin: 14px 0; }
+.split { border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.split span { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; display: block; }
+.split b { font-variant-numeric: tabular-nums; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cols ul { padding-left: 18px; margin: 6px 0 0; }
+
+/* Pojmy, zásady */
+.terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.terms div { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font-size: 14px; }
+.terms b { display: block; margin-bottom: 2px; font-size: 15px; }
+.rules { counter-reset: r; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.rules div { counter-increment: r; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px 12px 48px; position: relative; font-size: 14px; }
+.rules div::before { content: counter(r); position: absolute; left: 14px; top: 12px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 700; display: grid; place-items: center; font-size: 13px; }
+
+.empty { text-align: center; padding: 36px 20px; }
+.empty ol { text-align: left; display: inline-block; margin: 12px 0; }
+code { background: var(--soft); padding: 1px 6px; border-radius: 5px; font-size: 13px; }
+footer { padding: 36px 0 48px; color: var(--muted); font-size: 13px; text-align: center; }
+.demo-banner { background: var(--warn-soft); color: var(--warn); text-align: center; font-size: 13px; font-weight: 600; padding: 6px 16px; }
+
+@media (max-width: 640px) {
+  header { padding: 28px 0 20px; }
+  .card { padding: 16px; border-radius: 14px; }
+  .days { gap: 4px; }
+  .day { padding: 6px 0; border-radius: 10px; }
+  .day .ic { font-size: 17px; }
+  .day .km { font-size: 11px; }
+  .stat b { font-size: 20px; }
+  .wk { grid-template-columns: 24px 52px 44px 1fr; gap: 8px; }
+  .wk .dl { display: none; }
+  .cols, .race { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div id="banner"></div>
+<header><div class="wrap" id="hero"></div></header>
+<nav><div class="wrap" id="nav"></div></nav>
+<main class="wrap" id="app"></main>
+<footer class="wrap" id="foot"></footer>
+
+<script>
+/*
+ * Stránka jen zobrazuje. Všechna data v data/*.json připravuje agent (Claude Code)
+ * podle CLAUDE.md – stránka nic nepočítá „chytře“, aby to, co vidíš, odpovídalo tomu,
+ * co agent napsal. Počítají se jen součty a mezičasy.
+ *
+ * Parametry v URL:  ?demo        ukázková data ze složky demo/
+ *                   ?dnes=RRRR-MM-DD   předstírané dnešní datum (na zkoušení)
+ */
+const DNY = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
+const IKONY = { posilovna: '🏋️', lehky: '🏃', dlouhy: '🏃', kvalita: '⚡', plavani: '🏊', kolo: '🚴', volno: '·', zavod: '🏁', chuze: '🥾', jine: '•', beh: '🏃' };
+const TYPY = { posilovna: 'Posilovna', lehky: 'Lehký běh', dlouhy: 'Dlouhý běh', kvalita: 'Kvalita', plavani: 'Plavání', kolo: 'Kolo', volno: 'Volno', zavod: 'Závod', chuze: 'Chůze / turistika', jine: 'Jiná aktivita', beh: 'Běh' };
+const BEZECKE = new Set(['lehky', 'dlouhy', 'kvalita', 'zavod']);
+const BARVY_FAZI = ['var(--f1)', 'var(--f2)', 'var(--f3)', 'var(--f4)', 'var(--f5)'];
+
+const url = new URLSearchParams(location.search);
+const SLOZKA = url.has('demo') ? 'demo/' : 'data/';
+
+// ---------- pomocné funkce ----------
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const datum = s => { const [y, m, d] = s.slice(0, 10).split('-').map(Number); return new Date(y, m - 1, d); };
+const isoDen = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const plus = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+const dm = d => `${d.getDate()}. ${d.getMonth() + 1}.`;
+const dmr = d => `${d.getDate()}. ${d.getMonth() + 1}. ${d.getFullYear()}`;
+const DEN_MS = 864e5;
+const naS = t => String(t).split(':').map(Number).reduce((a, b) => a * 60 + b, 0);
+const cas = s => { s = Math.round(s); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); };
+const km = n => (Math.round(n * 10) / 10).toLocaleString('cs-CZ');
+const hod = s => { const h = s / 3600; return h >= 1 ? `${km(h)} h` : `${Math.round(s / 60)} min`; };
+const denTydne = d => (d.getDay() + 6) % 7;   // Po = 0
+const sloveso = (n, a, b, c) => n === 1 ? a : n >= 2 && n <= 4 ? b : c;
+
+async function nacti(jmeno) {
+  try {
+    const r = await fetch(SLOZKA + jmeno + '.json', { cache: 'no-store' });
+    return r.ok ? await r.json() : null;
+  } catch { return null; }
+}
+
+// ---------- stav ----------
+const S = {};
+
+async function start() {
+  [S.profil, S.plan, S.aktivity, S.hodnoceni] = await Promise.all(['profil', 'plan', 'aktivity', 'hodnoceni'].map(nacti));
+  S.aktivity = (S.aktivity || []).slice().sort((a, b) => a.datum.localeCompare(b.datum));
+  const dnes = url.get('dnes') || (url.has('demo') && S.profil?.demo_dnes);
+  S.dnes = dnes ? datum(dnes) : datum(isoDen(new Date()));
+  if (url.has('demo')) document.getElementById('banner').innerHTML = '<div class="demo-banner">Ukázková data – <a href="./">zpět na můj plán</a></div>';
+
+  if (!S.profil || !S.plan) return prazdne();
+
+  // aktivity podle dne, ať se dají rychle párovat s plánem
+  S.podleDne = {};
+  for (const a of S.aktivity) (S.podleDne[a.datum.slice(0, 10)] ||= []).push(a);
+
+  S.tydny = S.plan.tydny.map(t => {
+    const od = datum(t.od);
+    const behy = [];
+    for (let i = 0; i < 7; i++) behy.push(...(S.podleDne[isoDen(plus(od, i))] || []).filter(a => a.typ === 'beh'));
+    return {
+      ...t, odD: od,
+      km: t.dny.reduce((s, d) => s + (BEZECKE.has(d.typ) && d.typ !== 'zavod' ? d.km || 0 : 0), 0),
+      dlouhy: Math.max(0, ...t.dny.filter(d => d.typ === 'dlouhy').map(d => d.km || 0)),
+      skutecne: behy.reduce((s, a) => s + a.km, 0),
+      minuly: plus(od, 7) <= S.dnes,
+    };
+  });
+  const iTed = S.tydny.findIndex(t => t.odD <= S.dnes && S.dnes < plus(t.odD, 7));
+  S.ted = iTed >= 0 ? iTed : (S.dnes < S.tydny[0].odD ? 0 : S.tydny.length - 1);
+  S.ti = S.ted;
+  S.den = null;
+  S.fazeBarva = Object.fromEntries((S.plan.faze || []).map((f, i) => [f.nazev, f.barva || BARVY_FAZI[i % BARVY_FAZI.length]]));
+
+  hero();
+  navigace();
+  document.getElementById('app').innerHTML = [
+    sekce('tyden', '', '<div class="card" id="tyden-karta"></div>'),
+    jakSeDari(), aktivity(), objem(), planPoTydnech(), tempa(), denD(), forma(), pojmy(), zasady(),
+  ].join('');
+  tyden();
+  document.getElementById('foot').innerHTML =
+    `Plán vygenerován ${S.plan.vygenerovano ? dmr(datum(S.plan.vygenerovano)) : ''} · aktivity k ${S.aktivity.length ? dmr(datum(S.aktivity.at(-1).datum)) : '–'} · připravuje agent v Claude Code`;
+}
+
+function sekce(id, nadpis, obsah, lead = '') {
+  return `<section id="${id}">${nadpis ? `<h2>${nadpis}</h2>` : ''}${lead ? `<p class="lead">${lead}</p>` : ''}${obsah}</section>`;
+}
+
+function prazdne() {
+  document.getElementById('hero').innerHTML = `<div class="eyebrow">Běžecká příprava</div><h1>Zatím bez plánu</h1>`;
+  document.getElementById('app').innerHTML = `<section><div class="card empty">
+    <h2>Pojďme ho poskládat</h2>
+    <ol>
+      <li>Otevři tuhle složku v Claude Code (VS Code nebo terminál).</li>
+      <li>Napiš <code>chci nový plán</code>.</li>
+      <li>Agent se zeptá na závod, datum, cíl a tvoji současnou formu a plán vygeneruje.</li>
+      <li>Běhy pak hází do <code>import/</code> a napíšeš <code>zhodnoť nové běhy</code>.</li>
+    </ol>
+    <p class="muted">Jak to bude vypadat: <a href="?demo">ukázkový plán</a></p>
+  </div></section>`;
+}
+
+// ---------- hlavička ----------
+function hero() {
+  const z = S.profil.zavod, zd = datum(z.datum);
+  const start = S.tydny[0].odD;
+  const zbyva = Math.round((zd - S.dnes) / DEN_MS);
+  const pct = Math.min(100, Math.max(0, (S.dnes - start) / (zd - start) * 100));
+  const stav = zbyva > 0 ? `týden ${S.ted + 1} z ${S.tydny.length} · do startu ${zbyva} ${sloveso(zbyva, 'den', 'dny', 'dní')}`
+    : zbyva === 0 ? 'dnes je den D 🏁' : 'závod je za tebou 🎉';
+  document.getElementById('hero').innerHTML = `
+    <div class="eyebrow">${esc(z.vzdalenost_km > 40 ? 'Maraton' : z.vzdalenost_km > 20 ? 'Půlmaraton' : 'Závod')}${S.profil.jmeno ? ' · ' + esc(S.profil.jmeno) : ''}</div>
+    <h1>${esc(z.nazev)}</h1>
+    <div class="sub">${dmr(start)} – ${dmr(zd)} · ${S.tydny.length} týdnů${z.cil ? ` · cíl ${esc(z.cil)}` : ''}</div>
+    <div class="progress"><div style="width:${pct}%"></div></div>
+    <div class="progress-label">${stav}</div>`;
+}
+
+function navigace() {
+  const odkazy = [['tyden', 'Týden'], ['hodnoceni', 'Jak se daří'], ['aktivity', 'Aktivity'], ['objem', 'Objem'], ['plan', 'Plán'], ['tempa', 'Tempa'], ['den-d', 'Den D'], ['forma', 'Forma'], ['pojmy', 'Pojmy'], ['zasady', 'Zásady']];
+  document.getElementById('nav').innerHTML = odkazy.map(([id, t]) => `<a href="#${id}">${t}</a>`).join('');
+}
+
+// ---------- týden ----------
+function verdiktAktivity(a) { return S.hodnoceni?.aktivity?.[a.id]; }
+
+function tyden() {
+  const t = S.tydny[S.ti], od = t.odD, jeTed = S.ti === S.ted;
+  if (S.den === null) S.den = jeTed ? denTydne(S.dnes) : 0;
+  const den = t.dny[S.den], datumDne = plus(od, S.den);
+  const zbyva = t.dny.slice(jeTed ? denTydne(S.dnes) + 1 : 0).filter(d => BEZECKE.has(d.typ));
+
+  const dny = t.dny.map((d, i) => {
+    const dt = plus(od, i), akt = S.podleDne[isoDen(dt)] || [];
+    const v = akt.map(verdiktAktivity).find(x => x && x.stav !== 'ok');
+    const realKm = akt.filter(a => a.typ === 'beh').reduce((s, a) => s + a.km, 0);
+    return `<button class="day${+dt === +S.dnes ? ' today' : ''}${i === S.den ? ' sel' : ''}" onclick="S.den=${i};tyden()">
+      ${akt.length ? `<span class="done ${v ? esc(v.stav) : ''}"></span>` : ''}
+      <div class="dn">${DNY[i]}</div><div class="ic">${IKONY[d.typ] || '•'}</div>
+      <div class="km">${realKm ? km(realKm) : d.km ? km(d.km) : ''}</div></button>`;
+  }).join('');
+
+  const aktDne = S.podleDne[isoDen(datumDne)] || [];
+  document.getElementById('tyden-karta').innerHTML = `
+    <div class="week-head">
+      <button class="arrow" onclick="S.ti--;S.den=null;tyden()" ${S.ti === 0 ? 'disabled' : ''} aria-label="Předchozí týden">‹</button>
+      <div class="kicker${jeTed ? ' now' : ''}">Týden ${t.cislo} · ${dm(od)} – ${dm(plus(od, 6))} · ${esc(t.faze)}${t.odlehceni ? ' · odlehčení' : ''}${jeTed ? ' · teď' : ''}</div>
+      <button class="arrow" onclick="S.ti++;S.den=null;tyden()" ${S.ti === S.tydny.length - 1 ? 'disabled' : ''} aria-label="Další týden">›</button>
+    </div>
+    ${t.poznamka ? `<div class="week-note">${esc(t.poznamka)}</div>` : '<div style="height:14px"></div>'}
+    <div class="stats">
+      <div class="stat"><b>${km(t.km)}</b><span>km plán</span></div>
+      <div class="stat"><b>${t.dlouhy ? km(t.dlouhy) : '–'}</b><span>km dlouhý běh</span></div>
+      <div class="stat"><b>${km(t.skutecne)}</b><span>km odběhnuto</span></div>
+    </div>
+    <div class="days">${dny}</div>
+    <div class="detail">
+      <div class="kicker">${+datumDne === +S.dnes ? 'Dnes · ' : ''}${DNY[S.den]} ${dm(datumDne)} · ${TYPY[den.typ] || den.typ}</div>
+      <h3>${esc(den.nazev || (TYPY[den.typ] + (den.km ? ` ${km(den.km)} km` : '')))}</h3>
+      ${den.popis ? `<p>${esc(den.popis)}</p>` : ''}
+      ${den.cviky?.length ? `<ul>${den.cviky.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}
+      ${aktDne.map(a => radekReal(a)).join('')}
+    </div>
+    ${jeTed && zbyva.length ? `<div class="hint">Ještě tě čeká: ${zbyva.map(d => `${d.den} ${(TYPY[d.typ] || '').toLowerCase()} ${km(d.km)} km`).join(', ')}.</div>` : ''}
+    <div class="hint">Dny se dají proklikat, šipkami přejdeš na jiný týden. Když něco nevyjde, posuň si to – důležitý je týden jako celek.</div>`;
+}
+
+function popisAktivity(a) {
+  const p = [];
+  if (a.km) p.push(`${km(a.km)} km`);
+  if (a.tempo_s) p.push(`${cas(a.tempo_s)}/km`);
+  else if (a.cas_s) p.push(hod(a.cas_s));
+  if (a.tep_prum) p.push(`♥ ${a.tep_prum}${a.tep_max ? ' / ' + a.tep_max : ''}`);
+  return p.join(' · ');
+}
+
+function radekReal(a) {
+  const v = verdiktAktivity(a);
+  return `<div class="real"><b>${IKONY[a.typ] || '•'} Skutečnost:</b> ${popisAktivity(a)}
+    ${v ? ` <span class="pill ${esc(v.stav)}">${esc(v.stitek)}</span><div class="small" style="margin-top:4px">${esc(v.komentar)}</div>` : ''}</div>`;
+}
+
+// ---------- hodnocení ----------
+function jakSeDari() {
+  const h = S.hodnoceni;
+  if (!h) return sekce('hodnoceni', 'Jak se daří', `<div class="card muted">Zatím žádné hodnocení. Hoď export běhů do <code>import/</code> a napiš agentovi <code>zhodnoť nové běhy</code>.</div>`);
+  return sekce('hodnoceni', 'Jak se daří', `<div class="card">
+      <div class="verdict v-${esc(h.stav)}"><b>${esc(h.titulek)}</b><p>${esc(h.shrnuti)}</p></div>
+      <ul class="points">${(h.body || []).map(b => `<li class="p-${esc(b.stav)}"><b>${esc(b.nazev)}.</b> ${esc(b.text)}</li>`).join('')}</ul>
+      ${h.doporuceni ? `<div class="next"><div class="kicker">Na příští dny</div>${esc(h.doporuceni)}</div>` : ''}
+    </div>`, `Hodnocení posledních tréninků podle plánu, tepu a regenerace. Data k ${dmr(datum(h.k_datu))}.`);
+}
+
+// ---------- aktivity ----------
+function aktivity() {
+  const posledni = S.aktivity.slice(-10).reverse();
+  if (!posledni.length) return sekce('aktivity', 'Poslední aktivity', '<div class="card muted">Zatím nic nahraného.</div>');
+  const radky = posledni.map(a => {
+    const v = verdiktAktivity(a), d = datum(a.datum);
+    return `<div class="act"><div class="ic">${IKONY[a.typ] || '•'}</div>
+      <div><div class="t">${DNY[denTydne(d)]} ${dm(d)} · ${esc(a.nazev || TYPY[a.typ])}</div><div class="m">${popisAktivity(a)}</div></div>
+      ${v ? `<span class="pill ${esc(v.stav)}">${esc(v.stitek)}</span>` : `<span class="pill none">${a.typ === 'beh' ? 'nehodnoceno' : TYPY[a.typ]}</span>`}
+      ${v?.komentar ? `<details><summary>komentář agenta</summary>${esc(v.komentar)}</details>` : ''}</div>`;
+  }).join('');
+
+  // čas mimo běh za posledních 7 dní – počítá se do únavy
+  const tyden = S.aktivity.filter(a => datum(a.datum) > plus(S.dnes, -7) && datum(a.datum) <= S.dnes);
+  const podleTypu = {};
+  for (const a of tyden) podleTypu[a.typ] = (podleTypu[a.typ] || 0) + (a.cas_s || 0);
+  const souhrn = Object.entries(podleTypu).filter(([, s]) => s).map(([t, s]) => `${IKONY[t]} ${TYPY[t].toLowerCase()} ${hod(s)}`).join(' · ');
+  return sekce('aktivity', 'Poslední aktivity', `<div class="acts">${radky}</div>${souhrn ? `<div class="sports">Posledních 7 dní: ${souhrn}</div>` : ''}`);
+}
+
+// ---------- graf objemu ----------
+function objem() {
+  const T = S.tydny, n = T.length;
+  const W = 760, H = 250, L = 30, R = 8, Top = 26, B = 34;
+  const max = Math.ceil(Math.max(...T.map(t => Math.max(t.km, t.skutecne))) / 10) * 10 || 10;
+  const sir = (W - L - R) / n, y = v => Top + (H - Top - B) * (1 - v / max);
+  let svg = '';
+  for (let v = 0; v <= max; v += 10) svg += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(v) + 4}" font-size="10" text-anchor="end">${v}</text>`;
+  T.forEach((t, i) => {
+    const x = L + i * sir, bw = sir * .68, bx = x + (sir - bw) / 2;
+    if (i === S.ted) svg += `<rect x="${x}" y="${Top - 6}" width="${sir}" height="${H - Top - B + 6}" fill="var(--accent-soft)" rx="4"/>`;
+    svg += `<rect x="${bx}" y="${y(t.km)}" width="${bw}" height="${y(0) - y(t.km)}" rx="2" fill="${S.fazeBarva[t.faze] || 'var(--f5)'}" opacity="${t.odlehceni ? .45 : .9}"/>`;
+    if (t.minuly || i === S.ted) svg += `<line x1="${bx - 2}" x2="${bx + bw + 2}" y1="${y(t.skutecne)}" y2="${y(t.skutecne)}" stroke="var(--text)" stroke-width="2.5" stroke-linecap="round"/>`;
+    if (n <= 30 || i % 2 === 0) svg += `<text x="${x + sir / 2}" y="${H - B + 14}" font-size="9.5" text-anchor="middle">${t.cislo}</text>`;
+    if (t.udalost) svg += `<text x="${x + sir / 2}" y="${Math.min(y(t.km), y(t.skutecne)) - 6}" font-size="9.5" text-anchor="middle" style="fill:var(--text)">${esc(t.udalost)}</text>`;
+    svg += `<rect class="bar-hit" x="${x}" y="${Top}" width="${sir}" height="${H - Top - B}" onclick="S.ti=${i};S.den=null;tyden();location.hash='tyden'"><title>Týden ${t.cislo}: plán ${km(t.km)} km, dlouhý ${km(t.dlouhy)} km${t.minuly ? `, skutečnost ${km(t.skutecne)} km` : ''}</title></rect>`;
+  });
+  const body = T.map((t, i) => `${L + i * sir + sir / 2},${y(t.dlouhy)}`).join(' ');
+  svg += `<polyline points="${body}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 3"/>`;
+  // měsíce pod osou
+  let mes = -1;
+  T.forEach((t, i) => { if (t.odD.getMonth() !== mes) { mes = t.odD.getMonth(); svg += `<text x="${L + i * sir + 2}" y="${H - 4}" font-size="9.5" font-weight="600">${t.odD.toLocaleString('cs-CZ', { month: 'short' }).toUpperCase()}</text>`; } });
+
+  const legenda = (S.plan.faze || []).map(f => `<span><i style="background:${S.fazeBarva[f.nazev]}"></i>${esc(f.nazev)}</span>`).join('')
+    + `<span><i style="background:none;border-top:2px dashed var(--muted);border-radius:0;height:0;width:14px"></i>Dlouhý běh</span><span><i style="background:var(--text);height:3px"></i>Skutečnost</span>`;
+  return sekce('objem', 'Objem po týdnech', `<div class="card"><svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Týdenní kilometry podle plánu">${svg}</svg><div class="legend">${legenda}</div></div>`,
+    'Sloupce jsou plánované kilometry podle fází, světlejší jsou odlehčovací týdny. Čárkovaná čára je dlouhý běh, tmavá čárka skutečnost. Ťukni na týden pro detail.');
+}
+
+// ---------- plán po týdnech ----------
+function planPoTydnech() {
+  const max = Math.max(...S.tydny.map(t => t.km));
+  const radky = S.tydny.map((t, i) => `<div class="wk${i === S.ted ? ' now' : ''}${t.minuly ? ' past' : ''}" onclick="S.ti=${i};S.den=null;tyden();location.hash='tyden'">
+      <span class="n">${t.cislo}</span><span class="muted num">${dm(t.odD)}</span>
+      <span class="k">${km(t.km)}${t.minuly ? `<br><small>${km(t.skutecne)}</small>` : ''}</span>
+      <span class="k dl">${t.dlouhy ? km(t.dlouhy) : '–'}</span>
+      <span>${esc(t.poznamka || '')}<div class="bar" style="width:${t.km / max * 100}%;background:${S.fazeBarva[t.faze]};opacity:${t.odlehceni ? .45 : .9}"></div></span></div>`).join('');
+  return sekce('plan', 'Plán po týdnech', `<div class="card weeks">
+      <div class="wk wk-head"><span>T</span><span>od</span><span>km</span><span class="dl">dlouhý</span><span>náplň</span></div>${radky}</div>`,
+    'Pod plánovanými km je u uplynulých týdnů skutečně odběhnuto. Rozpis po dnech je nahoře v kartě týdne.');
+}
+
+// ---------- tempa ----------
+function tempa() {
+  const z = S.plan.tempa || [];
+  if (!z.length) return '';
+  const vse = z.flatMap(t => [naS(t.od), naS(t.do)]);
+  const pom = Math.max(...vse) + 15, rych = Math.min(...vse) - 15;
+  const x = p => (pom - p) / (pom - rych) * 100;
+  const radky = z.map((t, i) => `<div>
+      <div class="zone-row"><b>${esc(t.nazev)}</b><b>${esc(t.od)}–${esc(t.do)} /km</b></div>
+      <div class="zone-track"><span style="left:${x(naS(t.od))}%;width:${x(naS(t.do)) - x(naS(t.od))}%;background:${BARVY_FAZI[i % 5]}"></span></div>
+      <div class="zone-row small muted"><span>${esc(t.popis || '')}</span><span>${t.tep ? '♥ ' + esc(t.tep) : ''}</span></div></div>`).join('');
+  const r = S.profil.referencni_vykon;
+  return sekce('tempa', 'Tréninková tempa', `<div class="card zones">${radky}<div class="small muted">← pomalejší · min/km · rychlejší →</div></div>`,
+    `${r ? `Tempa vychází z výkonu ${esc(r.cas)} na ${km(r.vzdalenost_km)} km (${dmr(datum(r.datum))}). ` : ''}${S.profil.max_tep ? `Tep je počítaný z maxima ${S.profil.max_tep}. ` : ''}Když tempo a tep nesedí (teplo, únava, kopce), řiď se tepem.`);
+}
+
+// ---------- den D ----------
+function denD() {
+  const d = S.plan.den_d;
+  if (!d) return '';
+  const z = S.profil.zavod, tempo = naS(d.tempo), dist = z.vzdalenost_km;
+  const body = [5, 10, 15, 20, 25, 30, 35, 40].filter(k => k < dist - .5);
+  if (dist > 30) body.splice(body.findIndex(k => k > dist / 2), 0, dist / 2);
+  const mezicasy = [...body, dist].map(k => `<div class="split"><span>${k === dist ? 'Cíl' : k === dist / 2 ? 'Polovina' : km(k) + ' km'}</span><b>${cas(tempo * k)}</b></div>`).join('');
+  const seznam = (nadpis, p) => p?.length ? `<div><div class="kicker">${nadpis}</div><ul>${p.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : '';
+  return sekce('den-d', `Den D · ${dmr(datum(z.datum))}`, `<div class="card">
+      <div class="race"><div class="stat"><span>Tempo</span><b>${esc(d.tempo)} /km</b></div><div class="stat"><span>Cílový čas</span><b>${cas(tempo * dist)}</b></div></div>
+      <div class="splits">${mezicasy}</div>
+      <div class="cols">${seznam('Závodní týden', d.zavodni_tyden)}${seznam('Výživa a vybavení', d.vyziva)}</div>
+    </div>`, esc(d.strategie || ''));
+}
+
+// ---------- forma ----------
+function forma() {
+  const start = S.tydny[0].odD;
+  const behy = S.aktivity.filter(a => a.typ === 'beh' && datum(a.datum) >= plus(start, -28));
+  if (!behy.length) return '';
+  const vPriprave = behy.filter(a => datum(a.datum) >= start);
+  const sKm = vPriprave.reduce((s, a) => s + a.km, 0);
+  const sTep = vPriprave.filter(a => a.tep_prum);
+  const prumTep = sTep.length ? Math.round(sTep.reduce((s, a) => s + a.tep_prum * a.cas_s, 0) / sTep.reduce((s, a) => s + a.cas_s, 0)) : null;
+
+  // bodový graf tempo × tep: lehké běhy mají ležet v zeleném pásu
+  const sTepem = behy.filter(a => a.tep_prum && a.tempo_s);
+  let graf = '';
+  if (sTepem.length) {
+    const W = 760, H = 260, L = 34, R = 10, T = 12, B = 30;
+    const tempa = sTepem.map(a => a.tempo_s), tepy = sTepem.map(a => a.tep_prum);
+    const pMin = Math.floor((Math.min(...tempa) - 15) / 30) * 30, pMax = Math.ceil((Math.max(...tempa) + 15) / 30) * 30;
+    const hMin = Math.floor((Math.min(...tepy) - 5) / 10) * 10, hMax = Math.ceil((Math.max(...tepy, S.profil.lehky_tep_max || 0) + 5) / 10) * 10;
+    const x = p => L + (pMax - p) / (pMax - pMin) * (W - L - R), y = h => T + (hMax - h) / (hMax - hMin) * (H - T - B);
+    let s = '';
+    if (S.profil.lehky_tep_max) s += `<rect x="${L}" y="${y(S.profil.lehky_tep_max)}" width="${W - L - R}" height="${y(hMin) - y(S.profil.lehky_tep_max)}" fill="var(--ok-soft)"/>`;
+    for (let h = hMin; h <= hMax; h += 10) s += `<line x1="${L}" x2="${W - R}" y1="${y(h)}" y2="${y(h)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(h) + 4}" font-size="10" text-anchor="end">${h}</text>`;
+    for (let p = pMin; p <= pMax; p += 30) s += `<text x="${x(p)}" y="${H - 10}" font-size="10" text-anchor="middle">${cas(p)}</text>`;
+    const prvni = datum(sTepem[0].datum), rozsah = Math.max(1, S.dnes - prvni);
+    for (const a of sTepem) {
+      const stari = (datum(a.datum) - prvni) / rozsah;   // 0 = nejstarší, 1 = nejnovější
+      s += `<circle cx="${x(a.tempo_s)}" cy="${y(a.tep_prum)}" r="${4 + Math.sqrt(a.km) * 1.6}" fill="var(--accent)" fill-opacity="${.18 + stari * .62}" stroke="var(--accent)"><title>${dm(datum(a.datum))}: ${km(a.km)} km, ${cas(a.tempo_s)}/km, ♥ ${a.tep_prum}</title></circle>`;
+    }
+    graf = `<div class="kicker" style="margin-top:18px">Tempo a tep</div><svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Tempo a průměrný tep jednotlivých běhů">${s}</svg>
+      <div class="small muted">← pomalejší · min/km · rychlejší → &nbsp;·&nbsp; Každý kruh je jeden běh, větší = delší, sytější = novější.${S.profil.lehky_tep_max ? ` Lehké běhy mají ležet v zeleném pásu (do ${S.profil.lehky_tep_max}).` : ''}</div>`;
+  }
+  return sekce('forma', 'Forma v přípravě', `<div class="card">
+      <div class="stats">
+        <div class="stat"><b>${km(sKm)}</b><span>km od začátku přípravy</span></div>
+        <div class="stat"><b>${vPriprave.length}</b><span>${sloveso(vPriprave.length, 'běh', 'běhy', 'běhů')} · nejdelší ${km(Math.max(0, ...vPriprave.map(a => a.km)))} km</span></div>
+        <div class="stat"><b>${prumTep || '–'}</b><span>průměrný tep</span></div>
+      </div>${graf}</div>`, 'V grafu jsou i běhy z posledních 4 týdnů před začátkem přípravy, pro srovnání.');
+}
+
+// ---------- pojmy a zásady ----------
+function pojmy() {
+  const p = [
+    ['Lehký běh', 'Tempo, při kterém se dá mluvit v celých větách. Většina objemu – buduje vytrvalost, srdce a šlachy bez velké únavy.'],
+    ['Dlouhý běh', 'Nejdelší běh týdne, pomalu. Učí tělo pálit tuky, vydržet čas na nohou a zkoušet gely.'],
+    ['Strides (rovinky)', 'Krátká uvolněná zrychlení na 15–20 s na konci lehkého běhu, s úplným odpočinkem mezi nimi. Technika, ne únava.'],
+    ['Fartlek', 'Souvislý běh se střídáním svižných úseků a pomalého klusu. Měkký úvod do rychlejších tréninků.'],
+    ['Tempo běh (práh)', '20–40 min „komfortně těžce“. Posouvá hranici, kde se začne hromadit únava.'],
+    ['Intervaly', 'Rychlé úseky (třeba 1 km) s klusem mezi nimi. Zlepšují VO2max a rychlost.'],
+    ['Závodní tempo', 'Tempo, kterým chceš běžet závod. Bloky v tomhle tempu učí tělo i hlavu ho držet.'],
+    ['Odlehčovací týden', 'Zhruba každý 4. týden méně km. Tělo trénink vstřebá – forma roste právě tehdy.'],
+    ['Tapering', 'Poslední 1–3 týdny před závodem klesá objem, abys na start přišel svěží.'],
+    ['HRV a klidový tep', 'Ranní ukazatele regenerace. Klidový tep nahoru a HRV dolů = tělo je unavené, den uber.'],
+  ];
+  return sekce('pojmy', 'Pojmy', `<div class="terms">${p.map(([a, b]) => `<div><b>${a}</b>${b}</div>`).join('')}</div>`, 'Co znamenají slova v plánu a k čemu který trénink je.');
+}
+
+function zasady() {
+  const z = S.plan.zasady || [
+    ['Zvyšuj postupně', 'Týdenní nárůst max ~10 %, zhruba každý 4. týden odlehči.'],
+    ['Lehké dny jsou lehké', 'Většina objemu v pohodovém tempu. Na tom stojí celý plán.'],
+    ['Spánek je trénink', 'Spánek a regenerace jsou součást tréninku, ne bonus.'],
+    ['Bolest ≠ únava', 'Únava je v pořádku, ostrá nebo přetrvávající bolest ne. Vynech a řeš to.'],
+    ['Nemoc', 'S teplotou neběhej. Po uzdravení pokračuj od aktuálního týdne, nedobíhej.'],
+    ['Návod, ne zákon', 'Když vynecháš trénink nebo týden, prostě pokračuj. Nic se neděje.'],
+  ];
+  return sekce('zasady', 'Zásady', `<div class="rules">${z.map(([a, b]) => `<div><b>${esc(a)}</b><br>${esc(b)}</div>`).join('')}</div>`);
+}
+
+start();
+</script>
+</body>
+</html>
