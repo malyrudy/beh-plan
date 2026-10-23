@@ -49,8 +49,9 @@ a otevři http://localhost:8000 (případně `?demo`, `?dnes=2027-02-04`).
    git remote add origin https://github.com/<uzivatel>/beh-plan.git
    git push -u origin master
    ```
-3. Repo → *Settings → Pages → Source: Deploy from a branch → master / (root)*.
-   Stránka poběží na `https://<uzivatel>.github.io/beh-plan/`.
+3. Repo → *Settings → Pages → Source: GitHub Actions*. Nasazení pak dělá
+   `.github/workflows/pages.yml` po každém pushi (trvá zhruba minutu).
+   Stránka běží na https://malyrudy.github.io/beh-plan/.
 
 Repo je veřejné, takže kdo zná adresu, vidí i tepy a běhy.
 
