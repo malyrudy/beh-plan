@@ -1,0 +1,1660 @@
+{
+ "vygenerovano": "2026-10-23",
+ "tempa": [
+  {
+   "klic": "lehky",
+   "nazev": "Lehký / dlouhý běh",
+   "od": "7:51",
+   "do": "7:09",
+   "tep": "do 150",
+   "popis": "Dá se mluvit v celých větách. Řiď se tepem, ne tempem – tempo časem samo zrychlí."
+  },
+  {
+   "klic": "prah",
+   "nazev": "Tempo běh (práh)",
+   "od": "6:05",
+   "do": "5:55",
+   "tep": "168–177",
+   "popis": "„Komfortně těžké“, 20–40 min souvisle nebo v úsecích."
+  },
+  {
+   "klic": "intervaly",
+   "nazev": "Intervaly (VO2max)",
+   "od": "5:34",
+   "do": "5:26",
+   "tep": "179–189",
+   "popis": "Těžké, ale technicky čisté. Úseky 2–5 min."
+  },
+  {
+   "klic": "hm",
+   "nazev": "Půlmaraton – dnešní forma",
+   "od": "6:18",
+   "do": "6:08",
+   "tep": "166–176",
+   "popis": "Kontrolované, závodní úsilí."
+  },
+  {
+   "klic": "cil",
+   "nazev": "Půlmaraton – cíl pod 2:00",
+   "od": "5:45",
+   "do": "5:35",
+   "tep": "165–178",
+   "popis": "Tam se chceš dostat do dubna. Bloky v tomhle tempu přijdou až ve specifické fázi."
+  }
+ ],
+ "faze": [
+  {
+   "nazev": "Základní",
+   "od": 1,
+   "do": 10,
+   "popis": "Lehký objem, rovinky, fartlek. Hlavní úkol: naučit se běhat pomalu (do 150)."
+  },
+  {
+   "nazev": "Rozvojová",
+   "od": 11,
+   "do": 18,
+   "popis": "Tempo běhy a intervaly, 4 běhy týdně, dlouhý běh do 15 km."
+  },
+  {
+   "nazev": "Specifická",
+   "od": 19,
+   "do": 22,
+   "popis": "Bloky v cílovém tempu 5:40, test 10 km, generálka."
+  },
+  {
+   "nazev": "Tapering",
+   "od": 23,
+   "do": 24,
+   "popis": "Méně km, svěží nohy na sobotu 10. 4."
+  }
+ ],
+ "tydny": [
+  {
+   "cislo": 1,
+   "od": "2026-10-26",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "Rozjezd: všechno lehce, poznej, jak pomalu je „do 150“",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "lehky",
+     "km": 5,
+     "nazev": "Lehce + 4 × 20 s rovinky · 5 km celkem",
+     "popis": "Rovinky = 20 s uvolněně rychle, mezi nimi úplně vydechnout."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 6,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 2,
+   "od": "2026-11-02",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "Vstupní test 5 km → podle něj zpřesníme tempa",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 7,
+     "nazev": "Test 5 km naplno (2 km rozklus, 5 km test, vyklus) · 7 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 6,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ],
+   "udalost": "Test 5 km"
+  },
+  {
+   "cislo": 3,
+   "od": "2026-11-09",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "lehky",
+     "km": 5,
+     "nazev": "Lehce + 6 × 20 s rovinky · 5 km celkem",
+     "popis": "Rovinky = 20 s uvolněně rychle, mezi nimi úplně vydechnout."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 8,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 4,
+   "od": "2026-11-16",
+   "faze": "Základní",
+   "odlehceni": true,
+   "poznamka": "Odlehčení",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "lehky",
+     "km": 4,
+     "nazev": "Lehce + 4 × 20 s rovinky · 4 km celkem",
+     "popis": "Rovinky = 20 s uvolněně rychle, mezi nimi úplně vydechnout."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 6,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 5,
+   "od": "2026-11-23",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "První fartlek",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Fartlek 6 × 1 min svižně / 1 min klus · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 8,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 6,
+   "od": "2026-11-30",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Fartlek 8 × 1 min svižně / 1 min klus · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 9,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 7,
+   "od": "2026-12-07",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "Dlouhý běh poprvé 10 km",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 7,
+     "nazev": "Fartlek 6 × 2 min svižně / 1 min klus · 7 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 10,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 8,
+   "od": "2026-12-14",
+   "faze": "Základní",
+   "odlehceni": true,
+   "poznamka": "Odlehčení",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "lehky",
+     "km": 5,
+     "nazev": "Lehce + 6 × 20 s rovinky · 5 km celkem",
+     "popis": "Rovinky = 20 s uvolněně rychle, mezi nimi úplně vydechnout."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 8,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 9,
+   "od": "2026-12-21",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "Vánoce – když se nedá, posuň si dny, týden jako celek",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Jóga nebo volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "lehky",
+     "km": 6,
+     "nazev": "Lehce + 6 × 20 s rovinky · 6 km celkem",
+     "popis": "Rovinky = 20 s uvolněně rychle, mezi nimi úplně vydechnout."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 11,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ],
+   "udalost": "Vánoce"
+  },
+  {
+   "cislo": 10,
+   "od": "2026-12-28",
+   "faze": "Základní",
+   "odlehceni": false,
+   "poznamka": "Přidává se 4. běh (středa, krátce a lehce)",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Fartlek 5 × 3 min svižně / 1,5 min klus · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 10,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 11,
+   "od": "2027-01-04",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "První tempo běh",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 7,
+     "nazev": "Tempo 2 × 8 min v prahovém tempu, 2 min klus · 7 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 11,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 12,
+   "od": "2027-01-11",
+   "faze": "Rozvojová",
+   "odlehceni": true,
+   "poznamka": "Odlehčení + test 5 km → přepočítáme tempa",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 4,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "Test 5 km naplno · 6 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 9,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ],
+   "udalost": "Test 5 km"
+  },
+  {
+   "cislo": 13,
+   "od": "2027-01-18",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 7,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 7,
+     "nazev": "Intervaly 5 × 800 m v tempu VO2max, 400 m klus · 7 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 12,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 14,
+   "od": "2027-01-25",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 7,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 8,
+     "nazev": "Tempo 3 × 8 min v prahovém tempu, 2 min klus · 8 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 13,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 15,
+   "od": "2027-02-01",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 7,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 8,
+     "nazev": "Intervaly 5 × 1 km v tempu VO2max, 2 min klus · 8 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 14,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 16,
+   "od": "2027-02-08",
+   "faze": "Rozvojová",
+   "odlehceni": true,
+   "poznamka": "Odlehčení",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "lehky",
+     "km": 6,
+     "nazev": "Lehce + 6 × 20 s rovinky · 6 km celkem",
+     "popis": "Rovinky = 20 s uvolněně rychle, mezi nimi úplně vydechnout."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 11,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 17,
+   "od": "2027-02-15",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 8,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 9,
+     "nazev": "Tempo 20 min souvisle v prahovém tempu · 9 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 14,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 18,
+   "od": "2027-02-22",
+   "faze": "Rozvojová",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 8,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 9,
+     "nazev": "Intervaly 6 × 1 km v tempu VO2max, 2 min klus · 9 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 15,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 19,
+   "od": "2027-03-01",
+   "faze": "Specifická",
+   "odlehceni": false,
+   "poznamka": "První bloky v cílovém tempu",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 8,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 7,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 9,
+     "nazev": "3 × 2 km v cílovém tempu na půlmaraton, 2 min klus · 9 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 16,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 20,
+   "od": "2027-03-08",
+   "faze": "Specifická",
+   "odlehceni": true,
+   "poznamka": "Odlehčení + test 10 km → potvrdíme cíl pod 2:00 / 2:05",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 6,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 7,
+     "nazev": "Test 10 km (nebo závod na 10 km) · 7 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 12,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ],
+   "udalost": "Test 10 km"
+  },
+  {
+   "cislo": 21,
+   "od": "2027-03-15",
+   "faze": "Specifická",
+   "odlehceni": false,
+   "poznamka": "",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 9,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 7,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 10,
+     "nazev": "2 × 4 km v cílovém tempu na půlmaraton, 3 min klus · 10 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 16,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 22,
+   "od": "2027-03-22",
+   "faze": "Specifická",
+   "odlehceni": false,
+   "poznamka": "Nejdelší týden, generálka",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko · nohy + core",
+     "popis": "45–60 min. Těžší váhy jsou OK, ale v úterý musíš normálně běžet.",
+     "cviky": [
+      "Dřep 3 × 10",
+      "Rumunský mrtvý tah 3 × 10",
+      "Výpady 3 × 8 / noha",
+      "Hip thrust / most 3 × 12",
+      "Výpony lýtek 3 × 15",
+      "Plank 3 × 40 s, Pallof press 3 × 10"
+     ]
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 9,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 7,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 10,
+     "nazev": "Intervaly 5 × 1 km v tempu VO2max · 10 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "posilovna",
+     "nazev": "Fitko · celé tělo, nohy lehčeji",
+     "popis": "40–50 min. V neděli je dlouhý běh – nohy nedodělávej.",
+     "cviky": [
+      "Bench / kliky 3 × 10",
+      "Přítahy / veslování 3 × 10",
+      "Bulharský dřep 2 × 8 / noha",
+      "Boční plank 3 × 30 s",
+      "Mrtvý brouk 3 × 10",
+      "Výpony na jedné noze 2 × 12"
+     ]
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 16,
+     "popis": "Posledních 6 km v cílovém tempu na půlmaraton – generálka."
+    }
+   ],
+   "udalost": "Vrchol"
+  },
+  {
+   "cislo": 23,
+   "od": "2027-03-29",
+   "faze": "Tapering",
+   "odlehceni": false,
+   "poznamka": "Tapering: méně km, tempo zůstává",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "posilovna",
+     "nazev": "Fitko lehce · horní tělo + core",
+     "popis": "Nohy už nezatěžuj, 30 min."
+    },
+    {
+     "den": "Út",
+     "typ": "lehky",
+     "km": 7,
+     "popis": "Lehce, tep do 150. Když je tep výš, zpomal – i kdyby to bylo 7:30/km."
+    },
+    {
+     "den": "St",
+     "typ": "lehky",
+     "km": 5,
+     "popis": "Krátce a úplně lehce."
+    },
+    {
+     "den": "Čt",
+     "typ": "kvalita",
+     "km": 7,
+     "nazev": "5 km v cílovém tempu na půlmaraton · 7 km celkem",
+     "popis": "2 km rozklus, hlavní část, zbytek vyklus."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno nebo jóga."
+    },
+    {
+     "den": "So",
+     "typ": "volno",
+     "popis": "Volno, procházka nebo jóga."
+    },
+    {
+     "den": "Ne",
+     "typ": "dlouhy",
+     "km": 11,
+     "popis": "Pomalu, tep do 150. Od 75 min si zkus vzít gel."
+    }
+   ]
+  },
+  {
+   "cislo": 24,
+   "od": "2027-04-05",
+   "faze": "Tapering",
+   "odlehceni": false,
+   "poznamka": "Závodní týden – v sobotu Pardubice 🏁",
+   "udalost": "Pardubice",
+   "dny": [
+    {
+     "den": "Po",
+     "typ": "volno",
+     "popis": "Volno nebo lehká jóga."
+    },
+    {
+     "den": "Út",
+     "typ": "kvalita",
+     "km": 6,
+     "nazev": "3 × 1 km v cílovém tempu · 6 km celkem",
+     "popis": "Jen připomenout nohám tempo, nic víc."
+    },
+    {
+     "den": "St",
+     "typ": "volno",
+     "popis": "Volno."
+    },
+    {
+     "den": "Čt",
+     "typ": "lehky",
+     "km": 4,
+     "nazev": "Lehce 4 km + 4 × 20 s rovinky",
+     "popis": "Uvolnit nohy."
+    },
+    {
+     "den": "Pá",
+     "typ": "volno",
+     "popis": "Volno, víc sacharidů, připrav si věci."
+    },
+    {
+     "den": "So",
+     "typ": "zavod",
+     "km": 21.1,
+     "nazev": "Pardubický vinařský půlmaraton 🏁",
+     "popis": "Prvních 5 km o ~5 s/km pomaleji, pak 5:40/km. Od 16. km podle sil."
+    },
+    {
+     "den": "Ne",
+     "typ": "volno",
+     "popis": "Užij si to. 🍷"
+    }
+   ]
+  }
+ ],
+ "den_d": {
+  "tempo": "5:40",
+  "strategie": "Cíl pod 2:00, záložní cíl 2:05. Prvních 5 km o ~5 s/km pomaleji (dohneš to v druhé polovině), pak držet 5:40. Od 16. km podle sil. Mezičasy níže jsou rovnoměrné.",
+  "zavodni_tyden": [
+   "Út: 3 × 1 km v cílovém tempu.",
+   "Čt: lehce 4 km s rovinkami.",
+   "Pá: volno, víc sacharidů, nic nového v jídle.",
+   "So ráno: snídaně 2,5–3 h před startem."
+  ],
+  "vyziva": [
+   "Na dlouhých bězích nad 75 min zkoušej gel každých ~40 min (30–40 g sacharidů/h).",
+   "V závodě 3 gely: 6., 12. a 17. km (~37 g/h) – stejné, jaké máš vyzkoušené.",
+   "Pít na občerstvovačkách podle žízně.",
+   "Boty, ve kterých máš aspoň 3 dlouhé běhy."
+  ]
+ }
+}

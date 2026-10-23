@@ -1,0 +1,61 @@
+{
+ "k_datu": "2026-10-23",
+ "stav": "pozor",
+ "titulek": "Výchozí stav: základ máš, ale běháš moc rychle",
+ "shrnuti": "Od jara máš za sebou slušný základ (duben–květen ~20 km/týden, Malaga 21,8 km). Září bylo bez běhu, takže plán začíná opatrně na 15 km/týden. Největší rezerva: skoro všechny běhy máš v průměru 155–165 tepů, což je středně těžké tempo, ne lehký běh.",
+ "body": [
+  {
+   "stav": "ok",
+   "nazev": "Základ",
+   "text": "75 běhů od listopadu, nejdelší 21,8 km (Malaga 6. 6.), nejlepší pětka 28:29 (11. 8.)."
+  },
+  {
+   "stav": "pozor",
+   "nazev": "Návrat po pauze",
+   "text": "Posledních 8 týdnů v průměru ~4 km běhu týdně, v září nula. Proto první týdny 15–18 km, ne víc."
+  },
+  {
+   "stav": "pozor",
+   "nazev": "Tep na lehkých bězích",
+   "text": "Říjnové běhy po rovině: průměr 157 a 164 (strop 150). Zpomal, klidně na 7:15–7:45/km nebo s krátkou chůzí do kopce."
+  },
+  {
+   "stav": "ok",
+   "nazev": "Fitko a jóga",
+   "text": "Pravidelně 2–4× týdně, to je skvělý základ proti zraněním. Počítá se ale do únavy – když bude těžko, uber nejdřív z nich."
+  },
+  {
+   "stav": "pozor",
+   "nazev": "Max tep ze zápěstí",
+   "text": "Hodinky ukazují 198–204 i na lehkých bězích – to jsou chyby měření. S hrudním pásem max 193. Pracuju s odhadem 195."
+  }
+ ],
+ "doporuceni": "Do neděle nic nemusíš. Od pondělí plán: Po fitko, Út 4 km lehce do 150, Čt 5 km s rovinkami, Ne 6 km. Ve 2. týdnu test 5 km – dej si na něj hrudní pás.",
+ "aktivity": {
+  "20261021-0818-beh": {
+   "stav": "pozor",
+   "stitek": "moc rychle",
+   "komentar": "5 km za 6:19/km při průměru 157 – o 7 tepů nad stropem lehkého běhu. Maximum 198 je chyba zápěstí."
+  },
+  "20261013-1645-beh": {
+   "stav": "ok",
+   "stitek": "lehce",
+   "komentar": "Trail 9,1 km s kopci, průměr 142 – přesně tak má lehký běh vypadat tepově. Tempo v terénu neřeš."
+  },
+  "20261012-1855-beh": {
+   "stav": "ok",
+   "stitek": "ok",
+   "komentar": "Krátký trail, průměr 154 – lehce nad stropem, v kopcích v pohodě."
+  },
+  "20261012-1816-beh": {
+   "stav": "pozor",
+   "stitek": "do kopce",
+   "komentar": "3 km do kopce, průměr 170 – to je spíš tempový trénink. Do kopce klidně chůze, ať tep nevyletí."
+  },
+  "20261006-1253-beh": {
+   "stav": "pozor",
+   "stitek": "moc rychle",
+   "komentar": "První běh po pauze: 6:36/km, průměr 164. Na rozběhání po měsíci volna zbytečně rychle."
+  }
+ }
+}
