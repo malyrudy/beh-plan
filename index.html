@@ -201,8 +201,8 @@ footer { padding: 36px 0 48px; color: var(--muted); font-size: 13px; text-align:
  *                   ?dnes=RRRR-MM-DD   předstírané dnešní datum (na zkoušení)
  */
 const DNY = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
-const IKONY = { posilovna: '🏋️', lehky: '🏃', dlouhy: '🏃', kvalita: '⚡', plavani: '🏊', kolo: '🚴', volno: '·', zavod: '🏁', chuze: '🥾', jine: '•', beh: '🏃' };
-const TYPY = { posilovna: 'Posilovna', lehky: 'Lehký běh', dlouhy: 'Dlouhý běh', kvalita: 'Kvalita', plavani: 'Plavání', kolo: 'Kolo', volno: 'Volno', zavod: 'Závod', chuze: 'Chůze / turistika', jine: 'Jiná aktivita', beh: 'Běh' };
+const IKONY = { posilovna: '🏋️', lehky: '🏃', dlouhy: '🏃', kvalita: '⚡', plavani: '🏊', kolo: '🚴', volno: '·', zavod: '🏁', chuze: '🥾', joga: '🧘', jine: '•', beh: '🏃' };
+const TYPY = { posilovna: 'Posilovna', lehky: 'Lehký běh', dlouhy: 'Dlouhý běh', kvalita: 'Kvalita', plavani: 'Plavání', kolo: 'Kolo', volno: 'Volno', zavod: 'Závod', chuze: 'Chůze / turistika', joga: 'Jóga', jine: 'Jiná aktivita', beh: 'Běh' };
 const BEZECKE = new Set(['lehky', 'dlouhy', 'kvalita', 'zavod']);
 const BARVY_FAZI = ['var(--f1)', 'var(--f2)', 'var(--f3)', 'var(--f4)', 'var(--f5)'];
 
@@ -300,7 +300,8 @@ function hero() {
   const start = S.tydny[0].odD;
   const zbyva = Math.round((zd - S.dnes) / DEN_MS);
   const pct = Math.min(100, Math.max(0, (S.dnes - start) / (zd - start) * 100));
-  const stav = zbyva > 0 ? `týden ${S.ted + 1} z ${S.tydny.length} · do startu ${zbyva} ${sloveso(zbyva, 'den', 'dny', 'dní')}`
+  const stav = S.dnes < start ? `příprava začíná ${dmr(start)} · do závodu ${zbyva} ${sloveso(zbyva, 'den', 'dny', 'dní')}`
+    : zbyva > 0 ? `týden ${S.ted + 1} z ${S.tydny.length} · do startu ${zbyva} ${sloveso(zbyva, 'den', 'dny', 'dní')}`
     : zbyva === 0 ? 'dnes je den D 🏁' : 'závod je za tebou 🎉';
   document.getElementById('hero').innerHTML = `
     <div class="eyebrow">${esc(z.vzdalenost_km > 40 ? 'Maraton' : z.vzdalenost_km > 20 ? 'Půlmaraton' : 'Závod')}${S.profil.jmeno ? ' · ' + esc(S.profil.jmeno) : ''}</div>
@@ -319,7 +320,7 @@ function navigace() {
 function verdiktAktivity(a) { return S.hodnoceni?.aktivity?.[a.id]; }
 
 function tyden() {
-  const t = S.tydny[S.ti], od = t.odD, jeTed = S.ti === S.ted;
+  const t = S.tydny[S.ti], od = t.odD, jeTed = t.odD <= S.dnes && S.dnes < plus(t.odD, 7);
   if (S.den === null) S.den = jeTed ? denTydne(S.dnes) : 0;
   const den = t.dny[S.den], datumDne = plus(od, S.den);
   const zbyva = t.dny.slice(jeTed ? denTydne(S.dnes) + 1 : 0).filter(d => BEZECKE.has(d.typ));
@@ -484,7 +485,9 @@ function forma() {
   const start = S.tydny[0].odD;
   const behy = S.aktivity.filter(a => a.typ === 'beh' && datum(a.datum) >= plus(start, -28));
   if (!behy.length) return '';
-  const vPriprave = behy.filter(a => datum(a.datum) >= start);
+  // před začátkem přípravy ukazuj posledních 28 dní, ať je s čím srovnávat
+  const predStartem = S.dnes < start;
+  const vPriprave = behy.filter(a => datum(a.datum) >= (predStartem ? plus(S.dnes, -28) : start));
   const sKm = vPriprave.reduce((s, a) => s + a.km, 0);
   const sTep = vPriprave.filter(a => a.tep_prum);
   const prumTep = sTep.length ? Math.round(sTep.reduce((s, a) => s + a.tep_prum * a.cas_s, 0) / sTep.reduce((s, a) => s + a.cas_s, 0)) : null;
@@ -512,7 +515,7 @@ function forma() {
   }
   return sekce('forma', 'Forma v přípravě', `<div class="card">
       <div class="stats">
-        <div class="stat"><b>${km(sKm)}</b><span>km od začátku přípravy</span></div>
+        <div class="stat"><b>${km(sKm)}</b><span>km ${predStartem ? 'za posledních 28 dní' : 'od začátku přípravy'}</span></div>
         <div class="stat"><b>${vPriprave.length}</b><span>${sloveso(vPriprave.length, 'běh', 'běhy', 'běhů')} · nejdelší ${km(Math.max(0, ...vPriprave.map(a => a.km)))} km</span></div>
         <div class="stat"><b>${prumTep || '–'}</b><span>průměrný tep</span></div>
       </div>${graf}</div>`, 'V grafu jsou i běhy z posledních 4 týdnů před začátkem přípravy, pro srovnání.');

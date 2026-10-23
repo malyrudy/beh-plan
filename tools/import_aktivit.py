@@ -42,11 +42,13 @@ def sport(text):
         return "beh"
     if re.search(r"swim|plav", t):
         return "plavani"
-    if re.search(r"bike|cycl|ride|kolo|cyklist|spinning", t):
+    if re.search(r"bike|cycl|ride|kol[oea]|cyklist|spinning", t):
         return "kolo"
     if re.search(r"walk|hik|chůz|chuz|turist|pěší", t):
         return "chuze"
-    if re.search(r"strength|weight|síl|sil|posil|fitness|training|hiit|cardio", t):
+    if re.search(r"yoga|jóga|joga|pilates|stretch|protah", t):
+        return "joga"
+    if re.search(r"strength|weight|síl|sil|posil|fitness|training|hiit|cardio|kardio", t):
         return "posilovna"
     return "jine"
 
@@ -206,8 +208,8 @@ GARMIN = {
     "nazev": ["Title", "Název"],
     "km": ["Distance", "Vzdálenost"],
     "cas": ["Time", "Čas", "Moving Time", "Celkový čas"],
-    "tep": ["Avg HR", "Prům. TF", "Průměrná TF"],
-    "tep_max": ["Max HR", "Max. TF", "Maximální TF"],
+    "tep": ["Avg HR", "Průměrný ST", "Prům. TF", "Průměrná TF"],
+    "tep_max": ["Max HR", "Maximální ST", "Max. TF", "Maximální TF"],
     "stoupani": ["Total Ascent", "Celkový výstup", "Celkové stoupání"],
 }
 

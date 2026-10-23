@@ -88,7 +88,8 @@ def main():
             ref = next((objem(p) for p in reversed(tydny[:i]) if not p.get("odlehceni")), objem(tydny[i - 1]))
             if km > ref * (1 + MAX_NARUST) and km - ref > TOLERANCE_KM:
                 varovani.append(f"T{t['cislo']}: {ref:g} → {km:g} km (+{km / ref - 1:.0%}){vyjimka}")
-            prev_dl = dlouhy(tydny[i - 1])
+            # i dlouhý běh se srovnává s posledním plnohodnotným týdnem – po odlehčení se vrací na původní délku
+            prev_dl = next((dlouhy(p) for p in reversed(tydny[:i]) if not p.get("odlehceni")), dlouhy(tydny[i - 1]))
             if dl and prev_dl and dl - prev_dl > 3:
                 varovani.append(f"T{t['cislo']}: dlouhý běh {prev_dl} → {dl} km (skok > 3 km){vyjimka}")
 
